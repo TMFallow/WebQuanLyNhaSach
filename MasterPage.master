@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="CSS/Main.css" />
+    <title>Rockberry Bookstore</title>
+</head>
+<body>
+    <header style="background-image:url('image/hinh.png');">
+    <input type="checkbox" />
+    <div class="menu-icon">
+        <div class="menu-line">
+        </div>
+    </div>
+    <div class="menu-item">
+        <ul>
+            <li><a href="Main.aspx">Trang Chủ</a></li>
+            <li><a href="Directional/DangNhap.aspx">Đăng Nhập</a></li>
+            <li><a href="Directional/SachMoiXuatBan.aspx">Loại Sách</a></li>
+            <li><a href="Directional/LienHe.aspx">Liên Hệ</a></li>
+        </ul>
+    </div>
+    <div class="header-text">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Rockberry Bookstore</h1>
+        <br />
+        <a href="Directional/SachMoiXuatBan.aspx">Sách Mới Xuất Bản</a>
+    </div>
+</header>
+   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                     
+   </asp:ContentPlaceHolder>
+    <div class="end">
+        <h1>The copy right is belong to Rockberry Bookstore</h1>
+    </div>     
+</body>
+</html>
